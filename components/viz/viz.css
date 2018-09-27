@@ -1,0 +1,10 @@
+viz {
+    display: block;
+    max-width: 320px;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+}
+.viz-container {
+    height: 400px;
+}

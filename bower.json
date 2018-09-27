@@ -1,0 +1,20 @@
+{
+  "name": "text-messages-embed",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Pim Linders <pimlinders@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

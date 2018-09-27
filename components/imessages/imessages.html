@@ -1,0 +1,30 @@
+<div class="imessages-container" ng-class="{'reveal': reveal, 'has-title': title, 'has-reveal': has_reveal}">
+    <div class="imessage-header" ng-if="title">
+        {{ title }}
+    </div>
+    <div class="imessage-wrapper">
+        <div class="imessages">
+            <div class="imessage-message clearfix"
+                 ng-repeat="message in messages"
+                 ng-class="{
+                    'show': message.show,
+                    'reveal': reveal,
+                    'is-loading': message.loading
+                }">
+                <div class="imessage-timestamp" ng-if="message.timestamp">{{ message.timestamp }}</div>
+                <div class="imessage" ng-class="{
+                    'is-sender': message.sender,
+                    'is-receiver': !message.sender
+                }">{{ message.text }}</div>
+                <div class="imessage-indicator" ng-if="!message.sender">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imessage-footer" ng-click="reveal = true;" ng-show="has_reveal">
+        <div class="reveal-btn">View full chat logs</div>
+    </div>
+</div>

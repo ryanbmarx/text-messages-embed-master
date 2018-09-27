@@ -1,0 +1,46 @@
+{
+  "name": "text-messages-embed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install",
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "start": "lite-server",
+    "convert": "node data/process.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USATODAY/text-messages-embed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.1.4",
+    "buffered-reader": "^1.0.1",
+    "cssmin": "^0.4.3",
+    "csvtojson": "^1.1.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "lite-server": "^2.2.2",
+    "request": "^2.79.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-ftp": "^0.5.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}

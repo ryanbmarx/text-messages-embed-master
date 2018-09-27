@@ -1,0 +1,3 @@
+[submodule "baseplate-components"]
+	path = baseplate-components
+	url = git@github.com:USATODAY/baseplate-components.git
